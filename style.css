@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body,html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+    background: url(bg-stormtest.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 16px;
+    color: rgba(255,255,255,1.0);
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 999;
+}
+.modal {
+	position: fixed;
+	width: 28em;
+	height: auto;
+	margin-top: -7em;
+	margin-left: -14em;
+	top: 50%;
+	left: 50%;
+	background-color: rgba(255,255,255,1.0);
+	color: #111;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	display: none;
+	z-index: 1000;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+}
+.modal h1 {
+	padding: 14px;
+	border-bottom: solid 1px #dedede;
+	color: #111;
+	font-size: 1.250em;
+	margin-bottom: 0;
+}
+.modal input {
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	border: solid 1px #dedede;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 12px;
+	margin-bottom: 14px;
+}
+.modal input:focus {
+  	border-color: #FF0000;
+  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(255, 0, 0, 0.7);
+}
+.modal .form {
+	padding: 14px;
+}
+.modal .close {
+	position: absolute;
+	top: -30px;
+	right: 0;
+	color: rgba(255,255,255,1.0);
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.800em;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+.modal .signup {
+	background-color: rgba(234,17,58,1.0);
+	color: rgba(255,255,255,1.0);
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 14px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: none;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	cursor: pointer;
+}
+.modal .signup:hover {
+	background-color: rgba(234,17,58,0.8);
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+}
+.modal .signup:active {
+	background-color: rgba(234,17,58,0.6);
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+}
+.canvas {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding-top: 20%;
+}
+.canvas .signup {
+	background-color: rgba(234,17,58,1.0);
+	color: rgba(255,255,255,1.0);
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 14px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: none;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	cursor: pointer;
+	width: 300px;
+}
+h1 {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	font-size: 1.850em;
+	margin-bottom: 14px;
+	position: relative;
+}
+
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	.overlay {
+		padding: 30px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		padding-top: 60px;	
+	}
+	.modal {
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+	}
+	.canvas .signup {
+		width: 400px;
+	}
+	.canvas {
+		padding-top: 200px;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+
+	.overlay {
+		padding: 20px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		padding-top: 60px;	
+	}
+	.modal {
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+	}
+	.canvas .signup {
+		width: 90%;
+	}
+	.canvas {
+		padding-top: 100px;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	.overlay {
+		padding: 20px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		padding-top: 60px;	
+	}
+	.modal {
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+	}
+	.canvas .signup {
+		width: 100%;
+	}
+	.canvas {
+		padding-top: 100px;
+	}
+}

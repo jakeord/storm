@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Storm Front-End test</title>
+<link type="text/css" href="style.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+	$(document).ready(function(){
+		$("#join").click(function(){
+			$(".overlay").fadeToggle("fast");
+			$(".modal").fadeToggle("fast");
+		});
+		$(".close").click(function(){
+			$(".overlay").fadeToggle("fast");
+			$(".modal").fadeToggle("fast");
+		});
+	});
+</script>
+</head>
+<body>
+<div class="canvas">
+	<h1>Storm Front-End test</h1>
+		<button id="join" class="signup">Sign up for free updates</button>
+</div>
+
+<div class="overlay">
+	<div class="modal">
+
+			<div class="close">Close</div>
+
+			<h1>Sign up to receive updates</h1>
+				<div class="form">
+					<input type="text" placeholder="Your name" name="username">
+					<input type="text" placeholder="E-mail address" name="email">
+
+					<button class="signup">Sign Up</button>
+				</div>
+	</div>
+</div>
+</body>
+</html>
